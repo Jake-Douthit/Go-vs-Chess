@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d9ddcde5eb06e047b7aca6f33deaab3
+guid: 313e2433da7db704fa216fb5bd906f44
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1682970240334958832
-    second: QueenWhite_0
+      213: 1853507880306519190
+    second: NightWhite_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: QueenWhite_0
+      name: NightWhite_0
       rect:
         serializedVersion: 2
         x: 7
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01fe741bb73e4a8e0800000000000000
-      internalID: -1682970240334958832
+      spriteID: 69cae0ac89bf8b910800000000000000
+      internalID: 1853507880306519190
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NightWhite_0: 1853507880306519190
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
