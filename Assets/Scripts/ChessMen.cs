@@ -47,8 +47,8 @@ public class ChessMen : MonoBehaviour
         float x = xBoard;
         float y = yBoard;
 
-        x *= 1.27f;
-        y *= 1.25f;
+        x *= 1.29f;
+        y *= 1.30f;
 
         x += -4.5f;
         y += -4.5f;
@@ -76,4 +76,60 @@ public class ChessMen : MonoBehaviour
         yBoard = y;
     }
 
-}
+    public void OnMouseUp()
+    {
+        DestroyMovePlates();
+
+        InitiateMovePlates();
+    }
+
+    public void DestroyMovePlates()
+    {
+        GameObject[] movePlates = GameObject.FindGameObjectsWithTag("MovePlate");
+        for (int i = 0; i < movePlates.Length; i++)
+        {
+            Destroy(movePlates[i]);
+        }
+    }
+
+    public void InitiateMovePlates()
+    {
+        switch (this.name)
+        {
+            case "BishopWhite":
+                LineMovePlate(1, 1);
+                LineMovePlate(-1, -1);
+                LineMovePlate(1, -1);
+                LineMovePlate(-1, 1);
+
+                break;
+            case "PawnWhite":
+                LineMovePlate(1, 0);
+                break;
+            case "KnightWhite":
+                LMovePlate();
+                break;
+            case "RookWhite":
+                LineMovePlate(1, 0);
+                LineMovePlate(0, 1);
+                LineMovePlate(-1, 0);
+                LineMovePlate(0, -1);
+
+                break;
+            case "KingWhite":
+                SurroundMovePlate();
+                break;
+            case "QueenWhite":
+                LineMovePlate(1, 0);
+                LineMovePlate(0, 1);
+                LineMovePlate(-1, 0);
+                LineMovePlate(0, -1);
+                LineMovePlate(1, 1);
+                LineMovePlate(0, 0);
+                LineMovePlate(1, -1);
+                LineMovePlate(-1, 1);
+
+                break;
+        }
+
+    }
